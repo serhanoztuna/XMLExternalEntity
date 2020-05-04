@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<center>
+    <div class="row" style="position: relative">
+        <div class="col-md-12">
+            <h2>Upload Offer File</h2>
+        </div>
+    </div>
+    <form action="/Home/Preview" method="post" enctype="multipart/form-data">
+        <span class="btn btn-outline-info btn-file">
+            Browse File <input type="file" name="file">
+        </span>
+        <button class="btn btn-primary" type="submit">Upload</button>
+    </form>
+</center>
